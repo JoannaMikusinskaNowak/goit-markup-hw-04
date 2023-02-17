@@ -126,6 +126,13 @@ nav {
   gap: 50px;
 }
 
+.contact-icon {
+  color: var(--ouwer-text-color);
+  width: 10px;
+  height: 16px;
+  padding: 31px 0;
+}
+
 .section-title {
   font-size: 44px;
   font-weight: 900;
@@ -138,8 +145,18 @@ nav {
 }
 
 .section-first {
-  background-color: var(--background-footer-color);
   text-align: center;
+  padding: 200px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/first_img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--background-footer-color);
 }
 
 .button-order {
@@ -235,6 +252,7 @@ nav {
 
 .wrap-names {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .teams-names {
@@ -252,7 +270,6 @@ nav {
   color: var(--ouwer-text-color);
   text-align: center;
   margin-top: 10px;
-  padding-bottom: 30px;
 }
 
 .section-shadow {
@@ -308,15 +325,13 @@ footer {
   color: var(--acent-color);
 }
 
-.wrap-footer {
+.wrap-footer:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .portfolio-conteiner {
   padding-top: 94px;
   padding-bottom: 94px;
-  display: flex;
-  justify-content: center;
 }
 
 .button-navi {
@@ -343,7 +358,7 @@ footer {
 }
 
 .section-third-area {
-  width: 360px;
+  width: 370px;
 }
 
 .section-third-title {
@@ -370,7 +385,8 @@ footer {
   gap: 30px;
 }
 
-wrap-title {
-  border: 1px soli var(--contener-color);
+.wrap-title {
+  border: 1px solid var(--contener-color);
+  border-top: 0;
   padding: 20px 24px;
 }
