@@ -127,11 +127,12 @@ nav {
 .phone {
   height: 16px;
   width: 10px;
-  fill: var(--ouwer-text-color);
+  fill: currentColor;
 }
 
 .phone:hover,
-.phone:active {
+.phone:active,
+.phone:focus {
   fill: var(--acent-color);
   cursor: pointer;
 }
@@ -139,11 +140,12 @@ nav {
 .mail {
   height: 12px;
   width: 16px;
-  fill: var(--ouwer-text-color);
+  fill: currentColor;
 }
 
 .mail:hover,
-.mail:active {
+.mail:active,
+.mail:focus {
   fill: var(--acent-color);
   cursor: pointer;
 }
@@ -158,8 +160,6 @@ nav {
 .contact-first:hover,
 .contact-first:focus {
   color: var(--acent-color);
-  fill: var(--acent-color);
-  cursor: pointer;
 }
 
 .contact-first-flex {
@@ -242,22 +242,22 @@ nav {
 .area-rectangle {
   background-color: var(--buttons-port-color);
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 .section-first-icon {
-  background-color: var(--buttons-port-color);
-  fill: var(--main-text-color);
   height: 70px;
   width: 70px;
-  margin-top: 25px;
-  margin-left: 100px;
 }
 
 .list-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 .list-text {
@@ -274,6 +274,7 @@ nav {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
+  fill: var(--ouwer-text-color);
 }
 
 .section-second {
@@ -309,7 +310,7 @@ nav {
 
 .wrap-names {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .teams-names {
@@ -331,37 +332,33 @@ nav {
 
 .wrap-icon-style {
   display: flex;
-  width: 206px;
-  margin-left: 32px;
   gap: 10px;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 .icon-style-social {
-  fill: var(--icon-social-color);
+  fill: currentColor;
   width: 20px;
   height: 20px;
-}
-
-.icon-style-social:hover,
-.icon-style-social:active {
-  fill: var(--secondary-text-color);
-  cursor: pointer;
 }
 
 .circle {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: none;
-  padding: 12px;
+  color: var(--icon-social-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle:hover,
-.circle:active {
+.circle:active,
+.circle:focus {
   background-color: var(--acent-color);
-  cursor: pointer;
+  color: var(--secondary-text-color);
 }
 
 .section-shadow {
@@ -383,26 +380,32 @@ nav {
   width: 170px;
   height: 92px;
   border: 1px solid;
-  border-color: var(--icon-social-color);
+  border-color: var(--ouwer-text-color);
   border-radius: 4px;
-  padding: 18px 32px;
+  color: var(--ouwer-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rectangle:hover,
-.rectangle:active {
+.rectangle:active,
+.rectangle:focus {
   border-color: var(--acent-color);
-  cursor: pointer;
+  color: var(--ouwer-text-color);
 }
 
 .icon-style-client {
-  fill: var(--icon-social-color);
+  fill: currentColor;
   width: 106px;
   height: 60px;
 }
 
 .icon-style-client:hover,
-.icon-style-client:active {
+.icon-style-client:active,
+.icon-style-client:focus {
   fill: var(--acent-color);
+  color: var(--ouwer-text-color);
 }
 
 footer {
@@ -490,7 +493,8 @@ footer {
 }
 
 .footer-circle:hover,
-.footer-circle:active {
+.footer-circle:active,
+.footer-circle:focus {
   background-color: var(--acent-color);
   cursor: pointer;
 }
